@@ -1,62 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Eid ul Adha Mubarak</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eid Mubarak</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      background-color: black;
-      color: white;
-      font-family: 'Arial', sans-serif;
-      overflow: hidden;
-      background-image: radial-gradient(white 1px, transparent 1px),
-                        radial-gradient(white 1px, transparent 1px);
-      background-size: 50px 50px;
-      background-position: 0 0, 25px 25px;
-    }
+  background-color: #000;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
 
-    .greeting {
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 2rem;
-      text-align: center;
-      z-index: 2;
-    }
+.eid-img {
+  max-width: 250px;
+  border-radius: 20px;
+  border: 4px solid #fff;
+}
 
-    .scroll-message {
-      position: absolute;
-      bottom: 20px;
-      white-space: nowrap;
-      font-size: 1.8rem;
-      animation: scrollLeftRight 10s linear infinite;
-      color: #FFD700;
-      font-weight: bold;
-    }
+.eid-message {
+  font-family: 'Segoe Script', cursive;
+  font-size: 2.2rem;
+  color: #ffd700; 
+  margin-top: 20px;
+}
 
-    @keyframes scrollLeftRight {
-      0% {
-        left: -100%;
-      }
-      100% {
-        left: 100%;
-      }
-    }
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  margin-top: 30px;
+}
+
+.marquee-text {
+  white-space: nowrap;
+  position: absolute;
+  display: inline-block;
+  animation: scroll-left 10s linear infinite;
+  font-size: 1.5rem;
+  color: #00ffff;
+  font-weight: bold;
+  text-shadow: 0 0 5px #fff;
+}
+
+@keyframes scroll-left {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
   </style>
 </head>
 <body>
-  <div class="greeting">
-    🤍 Aap sab ko meri taraf se <br><strong class="text-warning">EID UL ADHA MUBARAK</strong> 🤍
-  </div>
 
-  <div class="scroll-message">
- 🌙✨ EID UL ADHA MUBARAK ✨🌙 🐐🐐🐐🐐🐐
-</div>
+  <div class="container text-center mt-5">
+  
+    <img src="assets/eid mubarak.png" alt="Eid Image" class="img-fluid eid-img" />
+
+ 
+    <h1 class="mt-4 eid-message">Eid Mubarak to all SMIT Teachers, Management, and Classmates! ✨🌟🌙</h1>
+
+ 
+    <div class="marquee-container mt-4">
+      <p class="marquee-text">🌟✨ EID UL ADHA MUBARAK ✨🌟</p>
+    </div>
+  </div>
 
 </body>
 </html>
